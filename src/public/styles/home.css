@@ -1,0 +1,133 @@
+body {
+  background-color: #232426;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.container {
+  background-color: #171719;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  color: #0080ff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#text-input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+#text-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+#submit-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+#submit-button:hover {
+  background-color: #2980b9;
+}
+
+#submit-button:active {
+  transform: translateY(1px);
+}
+
+#result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #222223;
+  text-align: left;
+  min-height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.toxicity-result {
+  margin-top: 5px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toxicity-safe {
+  background-color: #e8f8f5;
+  color: #27ae60;
+}
+
+.toxicity-warning {
+  background-color: #fef5e7;
+  color: #e67e22;
+}
+
+.toxicity-danger {
+  background-color: #fdedeb;
+  color: #e74c3c;
+}
+
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #3498db;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  #text-input,
+  #submit-button {
+    font-size: 14px;
+  }
+}
