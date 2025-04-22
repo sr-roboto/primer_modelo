@@ -1,0 +1,21 @@
+{
+  "name": "primer_modelo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sr-roboto/primer_modelo.git"
+  },
+  "keywords": [],
+  "author": "Marcos Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sr-roboto/primer_modelo/issues"
+  },
+  "homepage": "https://github.com/sr-roboto/primer_modelo#readme",
+  "description": ""
+}
