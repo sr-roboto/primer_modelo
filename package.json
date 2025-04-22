@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src index.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,12 @@
     "url": "https://github.com/sr-roboto/primer_modelo/issues"
   },
   "homepage": "https://github.com/sr-roboto/primer_modelo#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@tensorflow-models/toxicity": "^1.2.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9"
+  }
 }
